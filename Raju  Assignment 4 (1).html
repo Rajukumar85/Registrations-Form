@@ -1,0 +1,118 @@
+
+
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+body {
+background-color:pink;
+background-position: center;
+background-repeat: none;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+            #form {
+                width: 480px;  
+                font-family: Arial;
+                box-shadow: 0px 0px 10px rgb(5,6,7,0.5);
+background: white;
+            }
+
+            #form h1 {
+                background-color: #2E6C8E;
+                text-align: center;
+                color: white;
+                padding: 15px 0px;
+                margin: 0;
+            }
+
+            #form form {
+                padding: 3% 5%;
+            }
+
+            #form .first-row, .fourth-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            #form .first-row p{
+                font-size: 17px
+            }
+
+            #form input, select{
+                padding: 10px;
+                border: solid 1px rgb(5,6,7,0.2);
+                font-size: 15px;
+                width: 210px;
+            }
+
+            #form select {
+                width: 210px;
+            }
+
+            #form .button {
+                background-color: #2B95D3;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="form">
+            <h1>Registration Form</h1>
+            <form>
+                <div class="first-row">
+                    <div class="r1c1">
+                        <p>First Name</p>
+                        <input type="text">
+                    </div>
+                    <div class="r1c2">
+                        <p>Last Name</p>
+                        <input type="text">
+                    </div>
+                </div>
+                <br>
+                <div class="second-row">
+                    <div class="r2c1">
+                        <p>Email Address</p>
+                        <input type="text" style="width:100%">
+                    </div>
+                </div>
+                <br>
+                <div class="third-row">
+                    <div class="r3c1">
+                        <p>Phone</p>
+                        <input type="number" style="width:100%">
+                    </div>
+                </div>
+                <br>
+                <div class="fourth-row">
+                    <div class="r4c1">
+                        <p>City</p>
+                        <select name="cities" id="cities">
+                            <option value="London">London</option>
+                            <option value="Rome">Rome</option>
+                        </select>
+                    </div>
+                    <div class="r4c2">
+                        <p>Country</p>
+                        <select name="countries" id="countries">
+                            <option value="India" for>India</option>
+                            <option value="UK">UK</option>
+                        </select>
+                    </div>
+                </div><br><br>
+                <div class="button">
+                    Get Started
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
